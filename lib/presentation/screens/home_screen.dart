@@ -10,12 +10,19 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: ListView(
        children: [
+
         ListTile(
           title: const Text('Cubits'),
           subtitle: const Text('Gestor de estado simples'),
           trailing: const Icon( Icons.arrow_forward_ios_rounded),
           onTap: () => context.push('/cubits')
-        )
+        ),
+        ListTile(
+          title: const Text('Bloc'),
+          subtitle: const Text('Gestor de estado composto'),
+          trailing: const Icon( Icons.arrow_forward_ios_rounded),
+          onTap: () => context.push('/bloc')
+        ),
         
        ],
       ),
